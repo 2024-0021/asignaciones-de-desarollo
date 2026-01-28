@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto HTML - Ejemplo</title>
+
+    <style>
+        /* ======= ESTILOS MODERNOS ======= */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Roboto", sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background: #007bff;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: .2s;
+        }
+
+        header nav ul li a:hover {
+            opacity: .7;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        table th {
+            background: #007bff;
+            color: white;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 8px;
+        }
+
+        form input[type="radio"], form input[type="checkbox"] {
+            width: auto;
+        }
+
+        form button {
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: .2s;
+        }
+
+        form button:hover {
+            background: #005ac7;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #eaecef;
+            border-radius: 8px;
+            font-size: .9rem;
+        }
+
+        blockquote {
+            padding: 10px;
+            background: #eee;
+            border-left: 4px solid #007bff;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenido a Mi Página</h1>
+        <p><strong>Proyecto de práctica</strong> utilizando etiquetas HTML básicas.</p>
+        <nav>
+            <ul>
+                <li><a href="#seccion1">Acerca de</a></li>
+                <li><a href="#seccion2">Lista</a></li>
+                <li><a href="#seccion3">Tabla</a></li>
+                <li><a href="#seccion4">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="seccion1">
+        <h2>Acerca del Proyecto</h2>
+        <p>Este sitio está creado para demostrar el uso de diversas etiquetas HTML.</p>
+        <blockquote>"Aprender haciendo es la mejor manera de aprender."</blockquote>
+        <hr>
+    </section>
+
+    <section id="seccion2">
+        <h2>Ejemplo de Listas</h2>
+        <h3>Lista ordenada</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ol>
+        <h3>Lista no ordenada</h3>
+        <ul>
+            <li>Programación</li>
+            <li>Diseño</li>
+            <li>Desarrollo Web</li>
+        </ul>
+        <hr>
+    </section>
+
+    <section id="seccion3">
+        <h2>Ejemplo de Tabla</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Lenguaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>CSS</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </section>
+
+    <section id="seccion4">
+        <h2>Ejemplo de Formulario</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="correo@ejemplo.com">
+
+            <label>Género:</label><br>
+            <input type="radio" name="genero"> Masculino
+            <input type="radio" name="genero"> Femenino <br><br>
+
+            <label>Intereses:</label><br>
+            <input type="checkbox"> Programación
+            <input type="checkbox"> Diseño <br><br>
+
+            <textarea placeholder="Escribe un mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Proyecto HTML - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
